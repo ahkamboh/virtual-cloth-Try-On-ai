@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
     // Keep files as Files instead of converting to Blobs
     console.log('Creating Gradio client...')
     const client = await Client.connect('levihsu/OOTDiffusion', {
-      hf_token: '***REMOVED***',
+      hf_token:process.env.HUGGING_FACE_TOKEN,
     })
     console.log('Gradio client connected successfully')
 
