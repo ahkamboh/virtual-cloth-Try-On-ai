@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -12,6 +12,13 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#020817",
+};
 
 export const metadata: Metadata = {
   title: "AI Cloth Changer - Virtual Try-On Experience",
@@ -42,8 +49,6 @@ export const metadata: Metadata = {
     creator: "@ahkamboh",
     images: ["/og-image.png"], // Same image as OpenGraph
   },
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-  themeColor: "#020817",
   manifest: "/manifest.json", // If you want to make your app installable (PWA)
 };
 
