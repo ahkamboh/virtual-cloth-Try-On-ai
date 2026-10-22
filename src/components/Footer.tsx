@@ -28,7 +28,7 @@ export default function Footer() {
             <Link href="https://linkedin.com/in/ahkamboh" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link href="mailto:ahk@alihamzakamboh.com" className="text-gray-400 hover:text-white transition-colors">
+            <Link href="mailto:hi@alihamzakamboh.com" className="text-gray-400 hover:text-white transition-colors">
               <Mail className="h-5 w-5" />
             </Link>
           </div>
